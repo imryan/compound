@@ -8,9 +8,9 @@
 
 #import "CompoundKit.h"
 
-#import "ViewController.h"
+#import "CPBaseViewController.h"
 
-@interface ViewController ()
+@interface CPBaseViewController ()
 
 @property (nonatomic, assign) CPWeatherCondition condition;
 @property (nonatomic, strong) NSString *temperature;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation ViewController
+@implementation CPBaseViewController
 
 #pragma mark - Table
 
@@ -51,7 +51,7 @@
             cell.detailTextLabel.text = @"0";
         } else if (indexPath.row == 1) {
             cell.imageView.image = [CompoundKit eventIcon];
-            cell.textLabel.text = @"Parties";
+            cell.textLabel.text = @"Events";
             cell.detailTextLabel.text = @"0";
         } else if (indexPath.row == 2) {
             cell.imageView.image = [CompoundKit noticeIcon];
@@ -114,6 +114,24 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Navigation
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    if ([identifier isEqualToString:@"ToTasks"]) {
+        if (indexPath == [NSIndexPath indexPathForRow:0 inSection:0]) {
+            return true;
+        }
+    }
+    
+    return false;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //
 }
 
 @end

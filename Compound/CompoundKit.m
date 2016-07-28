@@ -10,6 +10,7 @@
 
 #import <AFNetworking/AFNetworking.h>
 #import <FontAwesomeKit/FontAwesomeKit.h>
+#import <Firebase/Firebase.h>
 
 #import "CompoundKit.h"
 
@@ -76,8 +77,6 @@
 }
 
 #pragma mark - Helpers
-
-// F = (K - 273.15)* 1.8000 + 32.00
 
 + (double)fahrenheitFromKelvin:(double)kelvin {
     return (kelvin - 273.15) * 1.8000 + 32.00;

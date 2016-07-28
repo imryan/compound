@@ -8,4 +8,5 @@ target 'Compound' do
   # Pods for Compound
     pod 'AFNetworking', '~> 3.0'
     pod 'FontAwesomeKit'
+    pod 'Firebase'
 end

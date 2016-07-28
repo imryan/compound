@@ -9,7 +9,6 @@
 #import "CPQuote.h"
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 
 @interface CompoundKit : NSObject
 

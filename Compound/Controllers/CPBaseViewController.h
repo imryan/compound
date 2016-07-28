@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface CPBaseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 
 @end

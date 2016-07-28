@@ -12,10 +12,12 @@
 		9464B6F61D493B8300CF5A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9464B6F41D493B8300CF5A28 /* Main.storyboard */; };
 		9464B6F81D493B8300CF5A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9464B6F71D493B8300CF5A28 /* Assets.xcassets */; };
 		9464B6FB1D493B8300CF5A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9464B6F91D493B8300CF5A28 /* LaunchScreen.storyboard */; };
-		9464B7091D49405900CF5A28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9464B7081D49405900CF5A28 /* ViewController.m */; };
+		9464B7091D49405900CF5A28 /* CPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9464B7081D49405900CF5A28 /* CPBaseViewController.m */; };
 		9464B70C1D49406400CF5A28 /* CPQuote.m in Sources */ = {isa = PBXBuildFile; fileRef = 9464B70B1D49406400CF5A28 /* CPQuote.m */; };
 		9464B70F1D49408A00CF5A28 /* CompoundKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9464B70E1D49408A00CF5A28 /* CompoundKit.m */; };
 		9464B7121D49611300CF5A28 /* Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = 9464B7111D49611300CF5A28 /* Keys.m */; };
+		9464B7151D499FE900CF5A28 /* CPTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9464B7141D499FE900CF5A28 /* CPTasksViewController.m */; };
+		9464B7181D49A21A00CF5A28 /* CPCreateTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9464B7171D49A21A00CF5A28 /* CPCreateTaskViewController.m */; };
 		BFE81F63FCCB2CEEC3B2F7C0 /* libPods-Compound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E2A948E0CE8D52C1529F15 /* libPods-Compound.a */; };
 /* End PBXBuildFile section */
 
@@ -30,14 +32,18 @@
 		9464B6F71D493B8300CF5A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9464B6FA1D493B8300CF5A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9464B6FC1D493B8300CF5A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9464B7071D49405900CF5A28 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controllers/ViewController.h; sourceTree = "<group>"; };
-		9464B7081D49405900CF5A28 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controllers/ViewController.m; sourceTree = "<group>"; };
+		9464B7071D49405900CF5A28 /* CPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPBaseViewController.h; path = Controllers/CPBaseViewController.h; sourceTree = "<group>"; };
+		9464B7081D49405900CF5A28 /* CPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPBaseViewController.m; path = Controllers/CPBaseViewController.m; sourceTree = "<group>"; };
 		9464B70A1D49406400CF5A28 /* CPQuote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPQuote.h; path = Models/CPQuote.h; sourceTree = "<group>"; };
 		9464B70B1D49406400CF5A28 /* CPQuote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPQuote.m; path = Models/CPQuote.m; sourceTree = "<group>"; };
 		9464B70D1D49408A00CF5A28 /* CompoundKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundKit.h; sourceTree = "<group>"; };
 		9464B70E1D49408A00CF5A28 /* CompoundKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompoundKit.m; sourceTree = "<group>"; };
 		9464B7101D49611300CF5A28 /* Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
 		9464B7111D49611300CF5A28 /* Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keys.m; sourceTree = "<group>"; };
+		9464B7131D499FE900CF5A28 /* CPTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPTasksViewController.h; path = Controllers/CPTasksViewController.h; sourceTree = "<group>"; };
+		9464B7141D499FE900CF5A28 /* CPTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPTasksViewController.m; path = Controllers/CPTasksViewController.m; sourceTree = "<group>"; };
+		9464B7161D49A21A00CF5A28 /* CPCreateTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPCreateTaskViewController.h; path = Controllers/CPCreateTaskViewController.h; sourceTree = "<group>"; };
+		9464B7171D49A21A00CF5A28 /* CPCreateTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPCreateTaskViewController.m; path = Controllers/CPCreateTaskViewController.m; sourceTree = "<group>"; };
 		D531DADA0A437F786D78CF6A /* Pods-Compound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Compound.release.xcconfig"; path = "Pods/Target Support Files/Pods-Compound/Pods-Compound.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,8 +126,12 @@
 		9464B7031D49401C00CF5A28 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9464B7071D49405900CF5A28 /* ViewController.h */,
-				9464B7081D49405900CF5A28 /* ViewController.m */,
+				9464B7071D49405900CF5A28 /* CPBaseViewController.h */,
+				9464B7081D49405900CF5A28 /* CPBaseViewController.m */,
+				9464B7131D499FE900CF5A28 /* CPTasksViewController.h */,
+				9464B7141D499FE900CF5A28 /* CPTasksViewController.m */,
+				9464B7161D49A21A00CF5A28 /* CPCreateTaskViewController.h */,
+				9464B7171D49A21A00CF5A28 /* CPCreateTaskViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -255,12 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9464B7181D49A21A00CF5A28 /* CPCreateTaskViewController.m in Sources */,
 				9464B6F01D493B8300CF5A28 /* AppDelegate.m in Sources */,
 				9464B7121D49611300CF5A28 /* Keys.m in Sources */,
 				9464B70C1D49406400CF5A28 /* CPQuote.m in Sources */,
 				9464B70F1D49408A00CF5A28 /* CompoundKit.m in Sources */,
 				9464B6ED1D493B8300CF5A28 /* main.m in Sources */,
-				9464B7091D49405900CF5A28 /* ViewController.m in Sources */,
+				9464B7151D499FE900CF5A28 /* CPTasksViewController.m in Sources */,
+				9464B7091D49405900CF5A28 /* CPBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
