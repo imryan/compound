@@ -8,6 +8,8 @@
 
 #import "CompoundKit.h"
 
+#import "CPTaskCell.h"
+
 #import "CPTasksViewController.h"
 
 @interface CPTasksViewController ()
@@ -25,7 +27,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -33,15 +35,15 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50.f;
+    return 55.f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellId = @"CellId";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    CPTaskCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     
-    cell.textLabel.text = @"Dishes";
-    cell.detailTextLabel.text = @"7/27/2016";
+    cell.taskLabel.text = @"Take out trash";
+    cell.createdAtLabel.text = @"7/27/2016";
     
     return cell;
 }
